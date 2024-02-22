@@ -6,8 +6,8 @@ g:maplocalleader = '\'
 filetype indent plugin on
 
 set termguicolors
-set background=dark
-colorscheme retrobox
+# set background=dark
+# colorscheme retrobox
 
 set number
 set cursorline
@@ -36,6 +36,7 @@ set cmdheight=1
 set noshowmode
 set noshowcmd
 set laststatus=2
+set signcolumn=yes
 
 set completeopt=menuone,popup,noselect,noinsert
 set completepopup=align:menu,border:off,highlight:InfoPopup

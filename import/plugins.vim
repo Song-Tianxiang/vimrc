@@ -44,9 +44,12 @@ Plug 'vim-denops/denops-startup-recorder.vim'
 # Plug 'Shougo/ddu.vim'
 Plug 'Shougo/ddc.vim'
 Plug 'Shougo/ddc-ui-native'
+Plug 'Shougo/pum.vim'
+Plug 'Shougo/ddc-ui-pum'
 
 Plug 'Shougo/ddc-source-around'
 Plug 'matsui54/ddc-source-buffer'
+Plug 'Shougo/ddc-source-cmdline'
 Plug 'Shougo/neco-vim' # vim script completion
 Plug 'Shougo/ddc-source-vim'
 Plug 'uga-rosa/ddc-source-vsnip'
@@ -72,7 +75,7 @@ Plug 'kana/vim-textobj-entire'
 Plug 'ahonn/vim-fileheader'
 
 # auto pairs
-Plug 'LunarWatcher/auto-pairs'
+Plug 'cohama/lexima.vim'
 
 # align
 Plug 'tommcdo/vim-lion'
@@ -80,12 +83,20 @@ Plug 'tommcdo/vim-lion'
 # colorscheme
 Plug 'vim/colorschemes'
 Plug 'jnurmine/Zenburn'
+Plug 'nordtheme/vim', { 'as': 'nord' }
 
 # colorscheme template tool
 Plug 'lifepillar/vim-colortemplate'
 
 # game
 Plug 'vim/killersheep'
+
+# command line autocompletion
+# Plug 'girishji/autosuggest.vim'
+
+# git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 
 #-----------------------------
 plug#end()

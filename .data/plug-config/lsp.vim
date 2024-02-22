@@ -91,9 +91,16 @@ augroup Lsp
   autocmd User LspSetup call LspOptionsSet(lspOpts)
   autocmd User LspSetup call LspAddServer(lspServers)
   autocmd User LspAttached {
-    setlocal keywordprg=:LspHover
+    setlocal signcolumn=yes
+
+    setlocal keywordprg=:silent\ LspHover
     setlocal tagfunc=lsp#lsp#TagFunc
     setlocal formatexpr=lsp#lsp#FormatExpr()
     nnoremap <buffer> <LocalLeader>f <Cmd>LspFormat<CR>
+    nnoremap <buffer> <LocalLeader>a <Cmd>LspCodeAction<CR>
+    nnoremap <buffer> <LocalLeader>r <Cmd>LspRename<CR>
+    nnoremap <buffer> <LocalLeader>d <Cmd>LspDiag first<CR>
+    nnoremap <buffer> [d <Cmd>LspDiag next<CR>
+    nnoremap <buffer> ]d <Cmd>LspDiag prev<CR>
   }
 augroup END

@@ -2,7 +2,7 @@ vim9script
 
 g:lightline = {
   colorscheme: 'gruvbox8',
-#   colorscheme: 'zenburn',
+#   colorscheme: 'nord',
   mode_map: {
     'n': 'N',
     'i': 'I',

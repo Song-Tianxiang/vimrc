@@ -37,6 +37,10 @@ ddc#custom#patch_global({
     buffer: {
       mark: 'B',
     },
+
+    cmdline: {
+      mark: 'C',
+    },
   },
 
   sourceParams: {
@@ -54,7 +58,7 @@ ddc#custom#patch_global({
 })
 
 ddc#custom#patch_filetype('vim', {
-  sources: [ 'omni', 'around', 'vim', 'file', 'buffer', ],
+  sources: [ 'omni', 'around', 'vim', 'file', 'buffer', 'cmdline', ],
 })
 
 # ddc#custom#patch_filetype(['c', 'cpp'], {
