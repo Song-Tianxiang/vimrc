@@ -52,38 +52,38 @@ var lspServers = [
   {
     name: 'clang',
     filetype: ['c', 'cpp'],
-    path: 'clangd-mp-17',
+    path: 'clangd',
     args: ['--background-index'],
   },
 
   # Rust language server
-#   {
-#     name: 'rustlang',
-#     filetype: ['rust'],
-#     path: '/usr/local/bin/rust-analyzer',
-#     args: [],
-#     syncInit: true,
-#   },
+  {
+    name: 'rustlang',
+    filetype: ['rust'],
+    path: 'rust-analyzer',
+    args: [],
+    syncInit: true,
+  },
 
 # Go language server
-  {
-    name: 'golang',
-    filetype: ['go', 'gomod'],
-    path: 'gopls',
-    args: ['serve'],
-    syncInit: true,
-    initializationOptions: {
-    semanticTokens: true,
-    },
-  },
+  # {
+  #   name: 'golang',
+  #   filetype: ['go', 'gomod'],
+  #   path: 'gopls',
+  #   args: ['serve'],
+  #   syncInit: true,
+  #   initializationOptions: {
+  #   semanticTokens: true,
+  #   },
+  # },
 
   # Javascript/Typescript language server
-  {
-    name: 'typescriptlang',
-    filetype: ['javascript', 'typescript'],
-    path: 'typescript-language-server',
-    args: ['--stdio'],
-  },
+  # {
+  #   name: 'typescriptlang',
+  #   filetype: ['javascript', 'typescript'],
+  #   path: 'typescript-language-server',
+  #   args: ['--stdio'],
+  # },
 ]
 
 augroup Lsp
@@ -93,7 +93,7 @@ augroup Lsp
   autocmd User LspAttached {
     setlocal signcolumn=yes
 
-    setlocal keywordprg=:silent\ LspHover
+    setlocal keywordprg=:LspHover
     setlocal tagfunc=lsp#lsp#TagFunc
     setlocal formatexpr=lsp#lsp#FormatExpr()
     nnoremap <buffer> <LocalLeader>f <Cmd>LspFormat<CR>

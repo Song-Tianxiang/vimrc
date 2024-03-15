@@ -7,27 +7,15 @@ plug#begin("~/.vim/.data/plug")
 Plug 'Song-Tianxiang/vim-plug-config'
 Plug 'junegunn/vim-plug'
 
-# startup time measure
-Plug 'dstein64/vim-startuptime'
-
 # fuzzy finder framework
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 # comment
-# Plug 'tpope/vim-commentary'
-Plug 'Song-Tianxiang/comment'
-
-# file explorer
-# Plug 'obaland/vfiler.vim'
-Plug 'Song-Tianxiang/vfiler.vim'
-Plug 'obaland/vfiler-column-devicons'
+Plug 'tpope/vim-commentary'
 
 # statusline
 Plug 'itchyny/lightline.vim'
 Plug 'lifepillar/vim-gruvbox8' # need gruvbox8 lightline colorscheme
-
-# autocompletion
-# Plug 'girishji/vimcomplete'
 
 # nerdfont icons
 Plug 'lambdalisue/nerdfont.vim'
@@ -38,7 +26,6 @@ Plug 'airblade/vim-rooter'
 # deno runtime
 Plug 'vim-denops/denops.vim'
 Plug 'vim-denops/denops-shared-server.vim', { 'do': { -> denops_shared_server#install() } }
-Plug 'vim-denops/denops-startup-recorder.vim'
 
 # denops plugin
 # Plug 'Shougo/ddu.vim'
@@ -65,7 +52,7 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'rafamadriz/friendly-snippets'
 
 # lsp
-Plug 'yegappan/lsp', { 'for': ['c', 'cpp', 'go', 'typescript'] }
+Plug 'yegappan/lsp'
 
 # text object
 Plug 'kana/vim-textobj-user'
@@ -82,17 +69,6 @@ Plug 'tommcdo/vim-lion'
 
 # colorscheme
 Plug 'vim/colorschemes'
-Plug 'jnurmine/Zenburn'
-Plug 'nordtheme/vim', { 'as': 'nord' }
-
-# colorscheme template tool
-Plug 'lifepillar/vim-colortemplate'
-
-# game
-Plug 'vim/killersheep'
-
-# command line autocompletion
-# Plug 'girishji/autosuggest.vim'
 
 # git
 Plug 'airblade/vim-gitgutter'
